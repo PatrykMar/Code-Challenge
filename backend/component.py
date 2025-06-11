@@ -46,7 +46,7 @@ class Backend(cdk.Stack):
         api = RestAPIGW(self, "RestApi")
 
         api.restapi.add_api_key("API-KEY")
-        # Usage plan was added via console in AWS
+        # Usage plan was added via console in AWS due to Usage function not working as expected under debugging
 
         users_resource = api.restapi.root.add_resource("users")
 
