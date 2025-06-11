@@ -3,8 +3,8 @@ import os
 import boto3
 
 
-client = boto3.client('dynamodb')
-dynamodb = boto3.resource("dynamodb")
+client = boto3.client('dynamodb',region_name='eu-west-1')
+dynamodb = boto3.resource("dynamodb", region_name='eu-west-1')
 table_name = os.getenv('DYNAMODB_TABLE')
 table = dynamodb.Table(table_name)
 

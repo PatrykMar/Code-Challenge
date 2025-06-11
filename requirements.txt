@@ -6,3 +6,4 @@ aws-cdk.cloud-assembly-schema==44.2.0
 constructs>=10.0.0,<11.0.0
 
 boto3~=1.38.34
+moto == 4.2.5

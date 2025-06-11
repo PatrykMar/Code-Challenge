@@ -1,10 +1,11 @@
 import json
 import boto3
+import os
 
 
-client = boto3.client('dynamodb')
-dynamodb = boto3.resource("dynamodb")
-table = dynamodb.Table('GenDBTablev1')
+client = boto3.client('dynamodb',region_name='eu-west-1')
+dynamodb = boto3.resource("dynamodb", region_name='eu-west-1')
+table_name = os.getenv('DYNAMODB_TABLE')
 tableName = 'GenDBTablev1'
 
 def lambda_handler(event, context):
