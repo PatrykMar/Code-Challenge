@@ -74,7 +74,7 @@ Example json for POST:
 ```
 {
   "email_address": "example@gmail.com",
-  "password": "example",
+  "password": "example"
 }
 ```
 
