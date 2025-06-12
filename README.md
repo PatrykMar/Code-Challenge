@@ -46,37 +46,37 @@ command.
 
 Next you would deploy it to the AWS account - please update the follwoing line of code in app.py 
 
-'''
+```
 env=cdk.Environment(account='<account_numeber>', region='<region>')
-'''
+```
 
 When the deployment of the stack is completed. In the terminal the API GW url is provided.
 
 The url has the following:
 
-'''
+```
 <url>/users - PUT
 <url>/users/{email_address} - GET
 <url>/users/{email_address} - DELETE
 <url>/users/login - POST
-'''
+```
 
 Example json for PUT event:
-'''
+```
 {
   "email_address": "example@gmail.com",
   "password": "example",
   "name": "Example Name"
 }
-'''
+```
 
 Example json for POST:
-'''
+```
 {
   "email_address": "example@gmail.com",
   "password": "example",
 }
-'''
+```
 
 If you have any issues with running the code please let me know.
 
