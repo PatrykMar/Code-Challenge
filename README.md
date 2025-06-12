@@ -2,6 +2,8 @@
 
 This is a project for CDK development with Python.
 
+Prerequisite: https://docs.aws.amazon.com/cdk/v2/guide/getting-started.html
+
 This project is set up like a standard Python project.  The initialization
 process also creates a virtualenv within this project, stored under the `.venv`
 directory.  To create the virtualenv it assumes that there is a `python3`
